@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #ya{/*等级 0,1,0,0*/
+        color: greenyellow;
+    }
+    /* 类选择器等级 高于 标签选择器 */
+    .yase{/*等级 0,0,1,0*/
+        color: green;/*优先级更高*/
+    }
+    div{/*等级 0,0,0,1*/
+        color: red;
+    }
+    div{                /*等级 无穷大*/
+        color: hotpink!important;
+    }
+    </style>
+</head>
+<body>                          <!--等级 1,0,0,0-->
+    <div class="yase" id="ya" style="color: indigo;">亚瑟</div>
+</body>
+</html>

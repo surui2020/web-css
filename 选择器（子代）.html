@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    ul li > a{color:red;}/*子代选择器要加> 子 指的是 亲儿子*/
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="#">苹果</a><!--儿子-->
+            <div>
+                <a href="#">苹果</a><!--孙子-->
+                <a href="#">苹果</a>
+                <a href="#">苹果</a>
+            </div>
+        </li>
+       
+</body>
+</html>
